@@ -37,7 +37,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m currently a  computer science undergraduate with a keen interest in fullstack web development.
+        Hello, I&apos;m currently a final year Computer Science student with a keen interest in Fullstack,CyberSecurity and  Blockchain development
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -45,8 +45,8 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Elvin Mworia
           </Heading>
-          {/* <p>Digital Craftsman ( Artist / Developer / Designer )</p> */}
-          <p>Digital Craftsman (Web Developer/UI Designer)</p>
+      
+          <p>Digital Craftsman (Software Developer)</p>
 
         </Box>
         <Box
@@ -81,21 +81,12 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+        Elvin is an enthusiastic and driven computer science student with a 
+        passion for problem-solving through coding and a knack for generating 
+        innovative ideas. Beyond the realm of technology, he has a fascinating 
+        hobby—studying the financial markets and delving into investment and finance books. 
+        Having an analytical mindset and technical skills allows
+         him to explore creative solutions to complex challenges{' '}
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -112,7 +103,7 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2001</BioYear>
-          Born in Meru, Kenya.
+          Born in Meru, Kenya
         </BioSection>
         <BioSection>
           <BioYear>2015</BioYear>
@@ -133,15 +124,15 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art,{' '}
+          Coding,{' '}
 
           
           
          
           
-            Photography
+           Reading
           
-          ,Reading  blog post on Tech
+          ,Listening  to podcasts of CyberSecurity & Blockchain Tech
         </Paragraph>
       </Section>
 
