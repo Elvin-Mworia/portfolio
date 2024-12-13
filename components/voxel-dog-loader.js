@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import { Box, Spinner } from '@chakra-ui/react'
+import HashLoader from 'react-spinners/HashLoader'
 
 export const DogSpinner = () => (
   <Spinner
@@ -30,7 +31,8 @@ export const DogContainer = forwardRef(({ children }, ref) => (
 const Loader = () => {
   return (
     <DogContainer>
-      <DogSpinner />
+      {/* <DogSpinner /> */}
+      <HashLoader/>
     </DogContainer>
   )
 }
