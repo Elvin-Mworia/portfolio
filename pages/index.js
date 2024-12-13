@@ -27,14 +27,6 @@ const Home = () => (
   <Layout>
     <Container>
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Elvin Mworia
-          </Heading>
-      
-          <p>Software Engineer</p>
-
-        </Box>
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
@@ -60,16 +52,25 @@ const Home = () => (
             />
           </Box>
         </Box>
+        <Box flexGrow={1}
+        margin="auto"
+        >
+          <Heading as="h2" ml=".5em" variant="page-title">
+            Elvin Mworia
+          </Heading>
+          <Heading as="h4" ml="25%" size="sm">Hello World!</Heading>
+        </Box>
       </Box>
       <Box
         borderRadius="lg"
+        mt={3}
         mb={6}
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a computer science graduate with keen interest in Fullstack  and  Web3 Engineering
+      I&apos;m a Software Engineer with a keen interest in Fullstack  and  Web3 Development
       </Box>
 
       <Section delay={0.1}>
