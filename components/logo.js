@@ -32,7 +32,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={5}
           >
-          {" "}Elvin Mworia
+          {" "}E/M
           </Text>
         </LogoBox>
       </a>
