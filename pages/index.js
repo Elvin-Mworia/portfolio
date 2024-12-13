@@ -17,9 +17,6 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -29,24 +26,13 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hello, I&apos;m currently a final year Computer Science student with a keen interest in Fullstack,CyberSecurity and  Blockchain development
-      </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Elvin Mworia
           </Heading>
       
-          <p>Digital Craftsman (Software Developer)</p>
+          <p>Software Engineer</p>
 
         </Box>
         <Box
@@ -59,21 +45,31 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="150px"
+            h="150px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/ElvinMworia1.jpg"
+              src="/images/ElvinMworia1.jpeg"
               alt="Profile image"
               borderRadius="full"
-              width="100%"
-              height="100%"
+              width="149px"
+              height="149px"
             />
           </Box>
         </Box>
+      </Box>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        css={{ backdropFilter: 'blur(10px)' }}
+      >
+        Hello, I&apos;m a computer science graduate with keen interest in Fullstack  and  Web3 Engineering
       </Box>
 
       <Section delay={0.1}>
