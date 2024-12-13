@@ -9,7 +9,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Divider 
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -17,6 +18,11 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
+import { WorkGridItem } from '../components/grid-item'
+import thumbhulu from '../public/images/works/huluthumb.png'
+import thumbwhatsapp from '../public/images/works/whatsapp.png'
+import thumbhastle from '../public/images/works/hastle.png'
+
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -58,7 +64,7 @@ const Home = () => (
           <Heading as="h2" ml=".5em" variant="page-title">
             Elvin Mworia
           </Heading>
-          <Heading as="h4" ml="25%" size="sm">Hello World!</Heading>
+          <Heading as="h4" ml="5%" size="sm">Software Engineer,Web3 Enthusiast</Heading>
         </Box>
       </Box>
       <Box
@@ -70,7 +76,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-      I&apos;m a Software Engineer with a keen interest in Fullstack  and  Web3 Development
+     Hello,I&apos;m a Software Engineer based in Nairobi Kenya with a keen interest in Fullstack  and  Web3 Development
       </Box>
 
       <Section delay={0.1}>
@@ -115,8 +121,32 @@ const Home = () => (
        
        
       </Section>
+      <Section delay={0.1}>
+        <Divider my={6} />
 
-      <Section delay={0.3}>
+        <Heading as="h3" fontSize={20} mb={4}>
+          Projects
+        </Heading>
+      </Section>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.7}>
+          <WorkGridItem id="hulu" thumbnail={thumbhulu} title="Hulu Clone">
+            Frontend  replica of Hulu a popular movie streaming website
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.8}>
+          <WorkGridItem id="whatsapp" thumbnail={thumbwhatsapp} title="Whatsapp Clone">
+            Whatsapp Desktop Clone with a minimalistic user interface
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.9}>
+          <WorkGridItem id="hastle" thumbnail={thumbhastle} title="Hastle web app">
+            A web app that makes searching of local manual jobs easier
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+
+      {/* <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
@@ -131,7 +161,7 @@ const Home = () => (
           
           ,Listening  to podcasts of CyberSecurity & Blockchain Tech
         </Paragraph>
-      </Section>
+      </Section> */}
 
       <Section delay={0.3}>
   {/*      <Heading as="h3" variant="section-title">
