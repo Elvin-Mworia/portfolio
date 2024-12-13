@@ -81,15 +81,12 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About Me
         </Heading>
-        <Paragraph>
-        Elvin is an enthusiastic and driven computer science student with a 
-        passion for problem-solving through coding and a knack for generating 
-        innovative ideas. Beyond the realm of technology, he has a fascinating 
-        hobby—studying the financial markets and delving into investment and finance books. 
-        Having an analytical mindset and technical skills allows
-         him to explore creative solutions to complex challenges{' '}
+        <Paragraph>I&apos;m an enthusiastic and driven  with a passion for solving 
+        complex problems and a knack for generating innovative ideas. Outside 
+        the world of technology, I enjoy exploring financial markets and diving into investment 
+        and finance books.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
