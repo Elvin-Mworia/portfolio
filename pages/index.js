@@ -10,7 +10,12 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
-  Divider 
+  Divider, 
+  Text,
+  Stack,
+  Progress,
+  Flex
+
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -119,6 +124,17 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Programming Languages
         </Heading>
+        <Stack>
+          <List>   
+            <ListItem delay={1}>
+            <Flex direction={"row"} align={"center"} > 
+            <Text size={"1em"} fontWeight={"bold"} mr={"0.5em"}> Python</Text>  
+            <Progress borderStyle={"solid"} borderWidth={1}    borderColor="gray.300" colorScheme='purple' size="md" width={"80%"} hasStripe={true} isAnimated={true}  value={95} />
+            </Flex>
+            
+         </ListItem>
+         </List>   
+        </Stack>
         </Section>
       <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
@@ -138,14 +154,14 @@ const Home = () => (
           <BioYear>{"  "}Jan-May</BioYear>
           <br/>
           Got an internship at a Non-profit organization called Africa&apos;s Voices Foundation(AVF) based in both the UK and Nairobi Kenya where 
-          i gained a lot of experience working with a team of 4 senior software engineers to maintain and improve the internal software tools used within the organization.
+          i gained a lot of experience working with a team of 4 senior software engineers maintaining,optimizing and improving the internal software tools used within the organization.
           I designed the UI of a proposed Analysis dashboard to reduce
-           the workload of a team of researchers at the organization.
+           the workload of researchers at the organization.
         </BioSection><br/>
         <BioSection>
           <BioYear>2023{" "}-{" "}2024</BioYear>
           <br/>
-        Retained as a junior Software Engineer.Involved in the system design and implementation of the proposed Analysis Dashboard a Single Page Application which we built with Typescript,Echarts framework as the charting library and  Firebase as the data storage and backend service.
+        Retained as a junior Software Engineer and took part in the system design and implementation of the proposed Analysis Dashboard a Single Page Application which we built with Typescript,Echarts framework as the charting library and  Firebase as the data storage and backend service.
         </BioSection>
        
        
