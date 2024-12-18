@@ -40,9 +40,9 @@ const Home = () => (
           textAlign="center"
         >
           <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
+            borderColor="orange.200"
+            borderWidth={5}
+            borderStyle="dotted"
             w="150px"
             h="150px"
             display="inline-block"
@@ -115,7 +115,12 @@ const Home = () => (
         </BioSection>
       
        </Section>
-      <Section delay={0.2}>
+       <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Programming Languages
+        </Heading>
+        </Section>
+      <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           Experience
         </Heading>
@@ -145,7 +150,7 @@ const Home = () => (
        
        
       </Section>
-      <Section delay={0.1}>
+      <Section delay={0.4}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
