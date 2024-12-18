@@ -33,6 +33,9 @@ import Image from 'next/image'
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
+const languages=[{language:"Python",expertise:95},{language:"Javascript",expertise:95},{language:"Typescript",expertise:90},
+  {language:"Golang",expertise:85},{language:"Solidity",expertise:70},{language:"Rust",expertise:30}
+]
 
 const Home = () => (
   <Layout>
@@ -126,13 +129,17 @@ const Home = () => (
         </Heading>
         <Stack>
           <List>   
-            <ListItem delay={1}>
-            <Flex direction={"row"} align={"center"} > 
-            <Text size={"1em"} fontWeight={"bold"} mr={"0.5em"}> Python</Text>  
-            <Progress borderStyle={"solid"} borderWidth={1}    borderColor="gray.300" colorScheme='purple' size="md" width={"80%"} hasStripe={true} isAnimated={true}  value={95} />
-            </Flex>
-            
-         </ListItem>
+            {
+              languages.map((language)=>(
+                <ListItem delay={1} md={"1.5em"}>
+                <Flex direction={"row"} align={"center"} > 
+                <Text size={"1em"} width={"20%"} fontWeight={"bold"} mr={"0.5em"}>{language.language}</Text>  
+                <Progress borderStyle={"solid"} borderWidth={1}    borderColor="gray.300" colorScheme='teal' size="md" width={"80%"} hasStripe={true} isAnimated={true}  value={language.expertise} />
+                </Flex>  
+             </ListItem>
+              )
+              )
+            }    
          </List>   
         </Stack>
         </Section>
