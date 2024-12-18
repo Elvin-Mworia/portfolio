@@ -64,7 +64,7 @@ const Home = () => (
           <Heading as="h2" ml=".5em" variant="page-title">
             Elvin Mworia
           </Heading>
-          <Heading as="h4" ml="5%" size="sm">Software Engineer,Web3 Enthusiast</Heading>
+          <Heading as="h4" ml="5%" size="sm">Software Developer,Web3 Enthusiast</Heading>
         </Box>
       </Box>
       <Box
@@ -76,17 +76,15 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-     Hello,I&apos;m a Software Engineer based in Nairobi Kenya with a keen interest in Fullstack  and  Web3 Development
+     Hello,I&apos;m Elvin Mworia a Software Developer based in Nairobi Kenya with a keen interest in Fullstack  and  Web3 Development.
       </Box>
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           About Me
         </Heading>
-        <Paragraph>I&apos;m an enthusiastic and driven  with a passion for solving 
-        complex problems and a knack for generating innovative ideas. Outside 
-        the world of technology, I enjoy exploring financial markets and diving into investment 
-        and finance books.
+        <Paragraph>I&apos;m an enthusiastic digital craftsman driven with a passion for crafting solutions to 
+        both simple and diverse problems. Outside the world of technology, I enjoy exploring what mother nature has to offer.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
