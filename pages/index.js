@@ -94,24 +94,53 @@ const Home = () => (
           </NextLink>
         </Box>
       </Section>
-
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Academic Background
         </Heading>
-        <BioSection>
+        {/* <BioSection>
           <BioYear>2001</BioYear>
           Born in Meru, Kenya
         </BioSection>
         <BioSection>
           <BioYear>2015</BioYear>
           Joined High Shcool and studied at Meru School 
+        </BioSection> */}
+        <BioSection>
+          <BioYear>2019{" "}-{" "}2024</BioYear><br/>
+          Joined Bachelor&apos;s Program of Computer Science in the School of
+          Computing at Jomo Kenyatta University of Agriculture and Technology(JKUAT)
+          where I earned my Bachelor&apos;s Degree in Computer Science.
+          
+        </BioSection>
+      
+       </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Experience
+        </Heading>
+        {/* <BioSection>
+          <BioYear>2001</BioYear>
+          Born in Meru, Kenya
         </BioSection>
         <BioSection>
-          <BioYear>2019</BioYear>
-          Joined Bachelor&apos;s Program of Computer Science in the School of
-          Computing at Jomo Kenyatta University of Agriculture and Technology
-          
+          <BioYear>2015</BioYear>
+          Joined High Shcool and studied at Meru School 
+        </BioSection> */}
+        
+        <BioSection>
+          <BioYear>2023</BioYear>
+          <BioYear>{"  "}Jan-May</BioYear>
+          <br/>
+          Got an internship at a Non-profit organization called Africa&apos;s Voices Foundation(AVF) based in both the UK and Nairobi Kenya where 
+          i gained a lot of experience working with a team of 4 senior software engineers to maintain and improve the internal software tools used within the organization.
+          I designed the UI of a proposed Analysis dashboard to reduce
+           the workload of a team of researchers at the organization.
+        </BioSection><br/>
+        <BioSection>
+          <BioYear>2023{" "}-{" "}2024</BioYear>
+          <br/>
+        Retained as a junior Software Engineer.Involved in the system design and implementation of the proposed Analysis Dashboard a Single Page Application which we built with Typescript,Echarts framework as the charting library and  Firebase as the data storage and backend service.
         </BioSection>
        
        
