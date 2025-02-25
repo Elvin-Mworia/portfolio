@@ -32,7 +32,8 @@ const Logo = () => {
             fontWeight="bold"
             ml={5}
           >
-          {" "}E/M
+            {' '}
+            E/M
           </Text>
         </LogoBox>
       </a>

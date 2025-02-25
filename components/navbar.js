@@ -77,8 +77,8 @@ const Navbar = props => {
           {/* <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>  */}
-       
-           {/* <LinkItem
+
+          {/* <LinkItem
             target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
             path={path}
@@ -120,7 +120,7 @@ const Navbar = props => {
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
                 > */}
-                  {/* View Source
+                {/* View Source
                 </MenuItem> */}
               </MenuList>
             </Menu>

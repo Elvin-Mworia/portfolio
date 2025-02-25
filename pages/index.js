@@ -26,7 +26,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbhulu from '../public/images/works/huluthumb.png'
 import thumbwhatsapp from '../public/images/works/whatsapp.png'
 import thumbhastle from '../public/images/works/hastle.png'
-
+import ContactForm from '../components/contact'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -238,6 +238,7 @@ const Home = () => (
         <Heading as="h4" fontSize={15} mb={4} variant="section-title">
           Contact
         </Heading>
+          <ContactForm/>
       </Section>
     </Container>
   </Layout>

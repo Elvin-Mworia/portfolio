@@ -90,16 +90,24 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.7}>
           <WorkGridItem id="hulu" thumbnail={thumbhulu} title="Hulu Clone">
-            Frontend  replica of Hulu a popular movie streaming website
+            Frontend replica of Hulu a popular movie streaming website
           </WorkGridItem>
         </Section>
         <Section delay={0.8}>
-          <WorkGridItem id="whatsapp" thumbnail={thumbwhatsapp} title="Whatsapp Clone">
+          <WorkGridItem
+            id="whatsapp"
+            thumbnail={thumbwhatsapp}
+            title="Whatsapp Clone"
+          >
             Whatsapp Desktop Clone with a minimalistic user interface
           </WorkGridItem>
         </Section>
         <Section delay={0.9}>
-          <WorkGridItem id="hastle" thumbnail={thumbhastle} title="Hastle web app">
+          <WorkGridItem
+            id="hastle"
+            thumbnail={thumbhastle}
+            title="Hastle web app"
+          >
             A web app that makes searching of local manual jobs easier
           </WorkGridItem>
         </Section>

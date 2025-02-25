@@ -32,7 +32,7 @@ const Loader = () => {
   return (
     <DogContainer>
       {/* <DogSpinner /> */}
-      <HashLoader/>
+      <HashLoader />
     </DogContainer>
   )
 }
