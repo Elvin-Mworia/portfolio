@@ -1,10 +1,8 @@
 import {
   Container,
-  Badge,
   Link,
   List,
   ListItem,
-  AspectRatio
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'

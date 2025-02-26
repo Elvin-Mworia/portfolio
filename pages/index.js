@@ -1,6 +1,5 @@
 import NextLink from 'next/link'
 import {
-  Link,
   Container,
   Heading,
   Box,
@@ -21,7 +20,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+//import { GridItem } from '../components/grid-item'
 import { WorkGridItem } from '../components/grid-item'
 import thumbhulu from '../public/images/works/huluthumb.png'
 import thumbwhatsapp from '../public/images/works/whatsapp.png'
@@ -138,7 +137,7 @@ const Home = () => (
         <Stack>
           <List>
             {languages.map((language, key) => (
-              <ListItem delay={1} md={'1.5em'}>
+              <ListItem delay={1} md={'1.5em'} key={key}>
                 <Flex direction={'row'} align={'center'}>
                   <Text
                     size={'1em'}
