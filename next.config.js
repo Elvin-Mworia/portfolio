@@ -5,9 +5,9 @@ module.exports = {
     EMAIL_USER: process.env.EMAIL_USER,
     EMAIL_PASS: process.env.EMAIL_PASS,
   },
-  basePath:'/Portfolio',
+  basePath:'/portfolio',
   output: 'export',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
   
 }
 
