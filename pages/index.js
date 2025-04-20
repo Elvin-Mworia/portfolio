@@ -25,6 +25,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbhulu from '../public/images/works/huluthumb.png'
 import thumbwhatsapp from '../public/images/works/whatsapp.png'
 import thumbhastle from '../public/images/works/hastle.png'
+import thumbveridoc from '../public/images/works/veridoc.png'
 import ContactForm from '../components/contact'
 import Image from 'next/image'
 
@@ -231,6 +232,15 @@ const Home = () => (
             A web app that makes searching of local manual jobs easier
           </WorkGridItem>
         </Section>
+        <Section delay={0.8}>
+          <WorkGridItem
+            id="veridoc"
+            thumbnail={thumbveridoc}
+            title="Veridoc"
+          >
+            Blockchain Based E-filling System
+          </WorkGridItem>
+          </Section>
       </SimpleGrid>
 
       <Section delay={0.3}>
