@@ -3,6 +3,7 @@ import {
     Link,
     List,
     ListItem,
+    Text
   } from '@chakra-ui/react'
   import Layout from '../../components/layouts/article'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -14,7 +15,7 @@ import {
       <Container>
         <Title>Veridoc</Title>
         <P>
-         Veridoc is a blockchain based e-filling system that allows users to upload court documents to a storage system that ensures there is no tampering of the documents.The system utilizes the immutabilty,integrity and traceability of Arweave a storage blockchain to ensures documents uploaded remain as is.</P>
+         Veridoc is a fullstack blockchain based e-filling system that allows users to upload court documents to a storage system that ensures there is no tampering of the documents.The system utilizes the immutabilty,integrity and traceability of Arweave a storage blockchain to ensures documents uploaded remain as is.</P>
   
         <List ml={4} my={4}>
           <ListItem>
@@ -23,12 +24,24 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>NextJS,ExpressJS,MongoDB,Arweave,WeaveDB,OthentKMS</span>
+        <Text fontSize={16} fontWeight={'extrabold'}>NextJS,ExpressJS,Arweave,WeaveDB,OthentKMS</Text>
           </ListItem>
           <ListItem>
             <Meta>Website</Meta>
             <Link href="https://veridoc-next-js.vercel.app/">
               Veridoc <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Meta>Frontend Code</Meta>
+            <Link href="https://github.com/Elvin-Mworia/veridoc-nextJs">
+              Github Repository <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Meta>Backend Code</Meta>
+            <Link href="https://github.com/Elvin-Mworia/veridocBackend">
+              Github Repository <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
