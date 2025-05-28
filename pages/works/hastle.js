@@ -14,40 +14,41 @@ const Work = () => (
     <Container>
       <Title>HASTLE</Title>
       <P>
-        STYLY Studio is a creative tool for VR, allowing you to build virtual
-        spaces towards extending fashion brand&apos;s expression ability of
-        their concept. I built its web UI and backend.
+      Hastle is a fullstack web application geared towards helping Handymen find tasks within their proximity. It features a user-friendly interface built with Next.js and Chakra UI, ensuring a seamless experience across devices. The backend is powered by NestJS and MongoDB, providing a robust and scalable solution.
       </P>
 
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Web</span>
+          <span>Web2</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NextJS,ExpressJS,MongoDB,GraphQL</span>
+          <span>NextJS,NestJS,MongoDB,Chakra UI</span>
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://styly.cc/">
+          <Link href="_blank">
             Hastle <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
+             <ListItem>
+            <Meta>Frontend Code</Meta>
+            <Link href="https://github.com/Elvin-Mworia/Hastle-frontend">
+              Github Repository <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Meta>Backend Code</Meta>
+            <Link href="https://github.com/Elvin-Mworia/hastle-backend-nest-js">
+              Github Repository <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
       </List>
 
-      {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
-          <iframe
-            src="https://www.youtube.com/embed/YLdHAggLBCw"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </AspectRatio> */}
+      
 
-      <WorkImage src="/images/works/styly_eyecatch.png" alt="STYLY" />
-      <WorkImage src="/images/works/styly_01.png" alt="STYLY" />
+      <WorkImage src="/images/works/hastle.png" alt="Hastle homepage" />
     </Container>
   </Layout>
 )
