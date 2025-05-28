@@ -22,8 +22,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 //import { GridItem } from '../components/grid-item'
 import { WorkGridItem } from '../components/grid-item'
-import thumbhulu from '../public/images/works/huluthumb.png'
-import thumbwhatsapp from '../public/images/works/whatsapp.png'
 import thumbhastle from '../public/images/works/hastle.png'
 import thumbveridoc from '../public/images/works/veridoc.png'
 import ContactForm from '../components/contact'
@@ -209,20 +207,6 @@ const Home = () => (
         </Heading>
       </Section>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.7}>
-          <WorkGridItem id="hulu" thumbnail={thumbhulu} title="Hulu Clone">
-            Frontend replica of Hulu a popular movie streaming website
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.8}>
-          <WorkGridItem
-            id="whatsapp"
-            thumbnail={thumbwhatsapp}
-            title="Whatsapp Clone"
-          >
-            Whatsapp Desktop Clone with a minimalistic user interface
-          </WorkGridItem>
-        </Section>
         <Section delay={0.9}>
           <WorkGridItem
             id="hastle"
