@@ -13,9 +13,10 @@ import {
   Text,
   Stack,
   Progress,
-  Flex
+  Flex,
+  Link
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon,ExternalLinkIcon  } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -87,7 +88,7 @@ const Home = () => (
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hello,I&apos;m Elvin Mworia a Software Developer based in Nairobi Kenya
-        with a keen interest in Fullstack and Web3 Development.
+        with a keen interest in Fullstack,Cyber Security and Web3 Development.
       </Box>
 
       <Section delay={0.1}>
@@ -127,6 +128,24 @@ const Home = () => (
           Computing at Jomo Kenyatta University of Agriculture and
           Technology(JKUAT) where I earned my Bachelor&apos;s Degree in Computer
           Science.
+        </BioSection>
+        <br/>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Undertook and completed Introduction to Cyber Security course by Cisco Networking Academy.<br/>
+          <Link href="https://www.credly.com/badges/9ec28141-4ab6-4d10-8b44-05c4e50e9447">
+              View Badge <ExternalLinkIcon mx="2px" />
+            </Link>
+          <br />
+        </BioSection>
+        <br/>
+        <BioSection>
+          <BioYear>2025</BioYear>
+          Got certified in Ethical Hacking by Cisco Networking Academy
+          <br/>
+        <Link href="https://www.credly.com/badges/ad329304-d457-45ff-b1c4-1ab8f9b326cc">
+              View Badge <ExternalLinkIcon mx="2px" />
+            </Link>
         </BioSection>
       </Section>
       <Section delay={0.3}>
