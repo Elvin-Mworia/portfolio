@@ -74,7 +74,7 @@ const Home = () => (
             Elvin Mworia
           </Heading>
           <Heading as="h4" ml="5%" size="sm">
-            Software Developer,Web3 Enthusiast
+            Software Developer,Cyber Security Enthusiast
           </Heading>
         </Box>
       </Box>
@@ -88,7 +88,7 @@ const Home = () => (
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hello,I&apos;m Elvin Mworia a Software Developer based in Nairobi Kenya
-        with a keen interest in Fullstack,Cyber Security and Web3 Development.
+        majoring in Fullstack development and Pentesting.
       </Box>
 
       <Section delay={0.1}>
@@ -97,9 +97,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I&apos;m an enthusiastic digital craftsman driven with a passion for
-          crafting solutions to both simple and diverse problems. Outside the
-          world of technology, I enjoy exploring what mother nature has to
-          offer.
+          crafting solutions to both simple and diverse problems.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
